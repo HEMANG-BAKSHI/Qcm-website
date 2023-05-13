@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Backend</title>
+    <style>
+        body{
+            background-image: url('https://img.freepik.com/free-vector/quiz-background-with-items-flat-design_23-2147599082.jpg?w=2000');
+            background-repeat: no-repeat;
+            background-size:1490px 1600px;
+            width:1500px;
+        }
+        *{
+            margin:20px;
+        }
+        input{
+            
+        }
+        input:hover{
+            cursor:pointer;
+        }
+        divx{
+            margin-left:0px;
+        }
+        h2{
+            border:4px solid black;
+            width:300px;
+            text-align:center;
+            border-radius: 10px;
+            background-color: #ffcfcf;
+        }
+        img{
+            margin-left:70px;
+            border:5px solid #ccadad;
+        }
+        div1{
+            background-color:grey;
+        }
+        div1:hover{
+            background-color:blueviolet;
+        }
+        .logo{
+            height:250px;
+            width:250px;
+        }
+        h2{
+            position:relative;
+            left:30px;
+        }
+        body{
+            font-size: 20px;
+        }
+        #heh{
+            height:100px;
+            width:200px;
+            position:relative;
+            right:20px;
+        }
+        label{
+            position:relative;
+            right:22px;
+        }
+
+    </style>
+</head>
+<body>
+    <img class="logo" src="https://www.quizzersclubmanit.in/Assets/logo-removebg-preview.png" alt="">
+    <h2>GENERAL FORM</h2>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text" >
+        </div>
+        <div>
+            Email ID : <input type="email" name="myEmail" id="">
+        </div>
+        <div>
+            City : <input type="text">
+        </div>
+        <div>
+            Scholar Number : <input type="number">
+        </div>
+        <div>
+            Date Of Birth : <input type="date" name="" id="">
+        </div>
+        <div>
+            Gender : Male<input type="radio" name="mygender" id=""> Female<input type="radio" name="mygender" id="">
+        </div>
+
+        <div class="divx">
+            <input type="text" name="" id="heh" placeholder="Write About Yourself">
+        </div>
+        <div class="divx">
+        <label for="car">What Do You Want To Apply For</label>
+            <select name="mycar" id="car">
+                <option value="ind" selected>Executive</option>
+                <option value="swf">Web Developer</option>
+                <option value="webd">Video Editor</option>
+            </select>
+        </div>
+        <div class="div1">
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+        </div>
+    </form>
+</body>
+</html>
